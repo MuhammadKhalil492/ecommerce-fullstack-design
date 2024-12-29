@@ -11,7 +11,6 @@ import {
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import { Tabs, Tab } from "@nextui-org/tabs";
 const Header = () => {
   const tabs = [
     {
@@ -32,13 +31,13 @@ const Header = () => {
     },
   ];
   return (
-    <header className="md:border-b">
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 md:border-b">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <>
+      <nav className="bg-white dark:bg-gray-900 md:border-b">
+        <div className="container flex flex-wrap items-center justify-between p-4 mx-auto">
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-dropdown"
             aria-expanded="false"
           >
@@ -54,7 +53,7 @@ const Header = () => {
               Brand
             </span>
           </a>
-          <div className="md:hidden justify-self-end flex justify-between space-x-4">
+          <div className="flex justify-between space-x-4 md:hidden justify-self-end">
             <a href="#">
               <FontAwesomeIcon icon={faShoppingCart} size="lg" />
             </a>
@@ -63,12 +62,12 @@ const Header = () => {
             </a>
           </div>
           <div className="hidden md:flex">
-            <div className="flex-1 mx-8 rounded-lg max-w-2xl">
-              <div className="relative flex items-center rounded-lg border border-gray-300 focus-within:border-none focus-within:ring-blue-500 focus-within:ring-2">
+            <div className="flex-1 max-w-2xl mx-8 rounded-lg">
+              <div className="relative flex items-center border border-gray-300 rounded-lg focus-within:border-none focus-within:ring-blue-500 focus-within:ring-2">
                 <input
                   type="text"
                   placeholder="Search"
-                  className="w-96 px-4 rounded-l-lg border-none outline-none focus:ring-0"
+                  className="px-4 border-none rounded-l-lg outline-none w-96 focus:ring-0"
                 />
                 <div className="relative">
                   <div className="relative inline-block text-left">
@@ -90,7 +89,7 @@ const Header = () => {
                       </button>
                     </div>
                     {/* <div
-                      className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg  ring-black/5 focus:outline-none"
+                      className="absolute right-0 z-10 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-black/5 focus:outline-none"
                       role="menu"
                       aria-orientation="vertical"
                       aria-labelledby="menu-button"
@@ -170,7 +169,7 @@ const Header = () => {
           </div>
           <div className="md:hidden rounded-lg border border-gray-300 w-full mt-2.5">
             <div className="relative w-full">
-              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <div className="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
                 <FontAwesomeIcon icon={faSearch} className="text-gray-500" />
               </div>
               <input
@@ -190,38 +189,38 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <a
                 href="#"
-                className="text-gray-600 hover:text-gray-900 flex flex-col items-center"
+                className="flex flex-col items-center text-gray-600 hover:text-gray-900"
               >
                 <FontAwesomeIcon icon={faUser} />
-                <span className="text-sm mt-1">Profile</span>
+                <span className="mt-1 text-sm">Profile</span>
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-gray-900 flex flex-col items-center"
+                className="flex flex-col items-center text-gray-600 hover:text-gray-900"
               >
                 <FontAwesomeIcon icon={faMessage} />
-                <span className="text-sm mt-1">Message</span>
+                <span className="mt-1 text-sm">Message</span>
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-gray-900 flex flex-col items-center"
+                className="flex flex-col items-center text-gray-600 hover:text-gray-900"
               >
                 <FontAwesomeIcon icon={faHeart} />
-                <span className="text-sm mt-1">Orders</span>
+                <span className="mt-1 text-sm">Orders</span>
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-gray-900 flex flex-col items-center"
+                className="flex flex-col items-center text-gray-600 hover:text-gray-900"
               >
                 <FontAwesomeIcon icon={faCartShopping} />
-                <span className="text-sm mt-1">My cart</span>
+                <span className="mt-1 text-sm">My cart</span>
               </a>
             </div>
           </div>
         </div>
       </nav>
       {/* Categories */}
-      <div className="max-w-7xl mx-auto sm:px-5 md:block hidden">
+      <div className="hidden mx-auto max-w-7xl sm:px-5 md:block">
         <div className="flex items-center justify-between h-12">
           <div className="flex items-center space-x-8">
             <button className="flex items-center mr-2 text-gray-700 hover:text-gray-900">
@@ -243,7 +242,6 @@ const Header = () => {
             <div className="relative group">
               <button className="flex items-center text-gray-700 hover:text-gray-900">
                 Help
-                {/* <i className="fas fa-chevron-down ml-1 text-xs"></i> */}
               </button>
             </div>
           </div>
@@ -262,7 +260,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="block md:hidden mx-4">
+      <div className="block mx-4 md:hidden">
         <div
           dir="ltr"
           data-orientation="horizontal"
@@ -271,10 +269,10 @@ const Header = () => {
           <div
             role="tablist"
             aria-orientation="horizontal"
-            className="scroll-smooth items-center justify-start text-center rounded-md bg-muted p-1 text-muted-foreground flex space-x-4 overflow-x-auto scrollbar-hide"
+            className="flex items-center justify-start p-1 space-x-4 overflow-x-auto text-center rounded-md scroll-smooth bg-muted text-muted-foreground scrollbar-hide"
             data-orientation="horizontal"
           >
-            {tabs.map((item,index) => (
+            {tabs.map((item, index) => (
               <button
                 key={index}
                 type="button"
@@ -317,7 +315,7 @@ const Header = () => {
           ></div>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 
