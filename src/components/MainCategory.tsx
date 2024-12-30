@@ -5,8 +5,8 @@ import React, { useState } from "react";
 function MainCategory() {
   const [activeTab, setActiveTab] = useState("/automobiles");
   return (
-    <div className="container flex justify-center">
-      <div className="flex p-3.5 rounded-lg border border-gray-300 bg-white">
+    <div className="flex justify-center">
+      <div className="flex md:p-3.5 md:rounded-lg border border-gray-300 bg-white">
         {/* Left Sidebar - Hidden on mobile */}
 
         <div className="justify-center hidden md:flex">
@@ -95,7 +95,7 @@ function MainCategory() {
         {/* Main Content  */}
 
         <div className="flex-2">
-          <div className="relative h-[50vh] w-full overflow-hidden  rounded-lg">
+          <div className="relative md:h-[50vh] md:w-full overflow-hidden  md:rounded-lg">
             <img
               src="/banner.png"
               className="w-full h-full"
