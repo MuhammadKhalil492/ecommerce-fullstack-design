@@ -12,28 +12,28 @@ const DealOffer: React.FC = () => {
   const products: Product[] = [
     {
       name: "Smart watches",
-      discount: 25,
-      image: "/watch.pnh",
+      discount: -25,
+      image: "/watch.png",
     },
     {
-      name: "Smart watches",
-      discount: 25,
-      image: "/watch.pnh",
+      name: "Laptops",
+      discount: -15,
+      image: "/laptop.png",
     },
     {
-      name: "Smart watches",
-      discount: 25,
-      image: "/watch.pnh",
+      name: "GoPro cameras",
+      discount: -40,
+      image: "/camera.png",
     },
     {
-      name: "Smart watches",
-      discount: 25,
-      image: "/watch.pnh",
+      name: "Headphones",
+      discount: -25,
+      image: "/headphone.png",
     },
     {
-      name: "Smart watches",
-      discount: 25,
-      image: "/watch.pnh",
+      name: "Canon cameras",
+      discount: -25,
+      image: "/mobile.png",
     },
   ];
   const responsive = {
@@ -44,7 +44,7 @@ const DealOffer: React.FC = () => {
   };
   return (
     <div className="bg-white shadow-sm md:rounded-lg md:border bg-card text-card-foreground">
-      <div className="flex flex-col gap-6 p-1 md:flex-row">
+      <div className="flex flex-col gap-6 md:flex-row">
         {/* Left section with title and timer */}
         <div className="flex justify-between px-4 py-6 border-b md:border-none md:justify-start md:flex-col md:w-64">
           <div className="">
@@ -83,11 +83,13 @@ const DealOffer: React.FC = () => {
               key={index}
               className="py-2 text-center border-l md:px-10 md:w-full"
             >
+              <div className="w-full h-[150px] flex items-center">
               <img
-                src="/watch.png"
+                src={product.image}
                 alt="Smart watch"
                 className="object-fill mx-auto"
               />
+              </div>
               <h2 className="mt-4 text-lg font-medium text-gray-800">
                 {product.name}
               </h2>

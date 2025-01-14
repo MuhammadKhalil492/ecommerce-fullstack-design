@@ -32,10 +32,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="md:border-b">
+        <header className="md:border-b ">
           <Header />
         </header>
-        <main>
+        <main className="container mx-auto px-16">
           {children}
           </main>
       </body>

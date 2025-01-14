@@ -5,7 +5,7 @@ interface OurServiceProps {
   heading: string;
   image: string;
   imgAlt: string;
-  iconName: string;
+  iconName: any;
 }
 const OurService: React.FC<OurServiceProps> = ({
   heading,
@@ -24,7 +24,7 @@ const OurService: React.FC<OurServiceProps> = ({
         <img src={image} alt={imgAlt} className="object-fill h-full" />
         <div className="absolute bg-blue-100 border-2 border-white rounded-full p-7 -bottom-6 right-4">
           {/* <i className="text-xl text-blue-600 fas fa-search"></i> */}
-          <FontAwesomeIcon icon={iconName} className="text-xl text-blue-400" />
+          <FontAwesomeIcon icon={iconName} className="text-xl text-black" />
         </div>
       </div>
       <div className="p-4">
