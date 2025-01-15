@@ -9,8 +9,8 @@ export default function ProductItem({title,price,srcImg,url}) {
         From <br />
       <span className="text-base text-gray-500">{price}</span>
       </p>
-      <div className="absolute flex self-end justify-end bottom-1 w-[80px] h-[80px]">
-        <img src={srcImg} alt="Soft Chair" className="objct-fill" />
+      <div className="absolute flex self-end justify-end bottom-1 w-[60px] h-[60px]">
+        <img src={srcImg} alt="Soft Chair" className="object-contain" />
       </div>
     </div>
     </a>
