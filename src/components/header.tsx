@@ -31,7 +31,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="container px-16 mx-auto" >
+    <div className="container md:px-16 mx-auto" >
       <nav className="bg-white dark:bg-gray-900 md:border-b">
         <div className="flex flex-wrap items-center justify-between p-4 mx-auto">
           <button
@@ -46,7 +46,7 @@ const Header = () => {
           </button>
           <a
             href="#"
-            className="flex items-center space-x-2 rtl:space-x-reverse w-60 md:w-auto"
+            className="flex items-center space-x-2 rtl:space-x-reverse sm:w-60 md:w-auto"
           >
             <Image src={"/logos.png"} width={50} height={50} alt="Logog" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">

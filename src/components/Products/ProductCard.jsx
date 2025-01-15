@@ -1,8 +1,9 @@
 import React from "react";
 
-export default function ProductCard({ imageUrl, imageAlt, price, description }
+export default function ProductCard({url, imageUrl, imageAlt, price, description }
 ) {
   return (
+    <a href={url}>
     <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
       <div className="mb-4 aspect-square">
         <img
@@ -16,5 +17,7 @@ export default function ProductCard({ imageUrl, imageAlt, price, description }
         <p className="text-sm text-gray-600">{description}</p>
       </div>
     </div>
+    </a>
+    
   );
 }

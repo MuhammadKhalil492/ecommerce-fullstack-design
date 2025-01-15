@@ -3,7 +3,7 @@
 export default function ProductItem({title,price,srcImg,url}) {
   return (
     <a href={url}>
-    <div className="relative flex flex-col items-start justify-between max-w-sm p-6 border-b border-l ">
+    <div className="relative flex flex-col items-start justify-between max-w-sm p-6 border-b border-l">
       <h2 className="text-xl font-medium text-black">{title}</h2>
       <p className="mt-2 text-base text-gray-500">
         From <br />

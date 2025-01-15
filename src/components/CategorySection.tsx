@@ -42,9 +42,9 @@ const CategorySection: React.FC<CateforySectionProps> = ({
         </div>
 
         {/* <!-- Right Section --> */}
-        <div className="grid grid-cols-2 col-span-3 gap-0.5 pt-1 md:grid-cols-4">
+        {/* <div className="grid grid-cols-2  md:col-span-3 gap-0.5 pt-1 md:grid-cols-4"> */}
           {children}
-       </div>
+       {/* </div> */}
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ export default function RootLayout({
         <header className="md:border-b ">
           <Header />
         </header>
-        <main className="container mx-auto px-16">
+        <main className="container mx-auto md:px-16">
           {children}
           </main>
       </body>
