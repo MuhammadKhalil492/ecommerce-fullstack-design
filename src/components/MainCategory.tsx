@@ -6,12 +6,11 @@ function MainCategory() {
   const [activeTab, setActiveTab] = useState("/automobiles");
 
   return (
-    <div className="container mx-auto border border-gray-300 rounded-lg my-6 p-6">
-      <div className="grid grid-cols-12 gap-4">
-        
+    <div className="border border-gray-300 rounded-lg my-6 p-4">
+      <div className="grid grid-cols-12 gap-2">
         {/* Left Sidebar */}
         <div className="col-span-3 hidden md:block">
-          <ul className="space-y-3 text-base font-medium text-gray-500 bg-white p-4 dark:text-gray-400">
+          <ul className="space-y-2 text-base font-medium text-gray-500 bg-white dark:text-gray-400">
             <LinkTab
               label="Automobiles"
               link="#"
@@ -64,28 +63,28 @@ function MainCategory() {
         </div>
 
         {/* Center Section */}
-        <div className="col-span-7 bg-purple-400 rounded-lg">
-          <div className="relative overflow-hidden">
-            <img
-              src="/banner.png"
-              className="w-full h-full object-cover"
-              alt="Electronic Items Banner"
-            />
-            <div className="absolute top-20 px-8 flex flex-col justify-center bg-gradient-to-r from-emerald-100/1 to-emerald-100/1">
-              <h1 className="mb-4 text-2xl font-bold text-gray-800 md:text-4xl">
-                Latest trending
-                <div className="mt-1 text-3xl md:text-5xl">Electronic items</div>
-              </h1>
-              <button className="px-6 py-2 text-gray-800 transition-colors bg-white rounded-md w-fit hover:bg-gray-100">
-                Learn more
-              </button>
-            </div>
+        {/* <div className="bg-purple-400 rounded-lg"> */}
+        <div className="col-span-6 rounded-lg relative overflow-hidden">
+          <img
+            src="/banner.png"
+            className="w-full h-full object-cover"
+            alt="Electronic Items Banner"
+          />
+          <div className="absolute top-20 px-8 flex flex-col justify-center bg-gradient-to-r from-emerald-100/1 to-emerald-100/1">
+            <h1 className="mb-4 text-2xl font-bold text-gray-800 md:text-4xl">
+              Latest trending
+              <div className="mt-1 text-3xl md:text-5xl">Electronic items</div>
+            </h1>
+            <button className="px-6 py-2 text-gray-800 transition-colors bg-white rounded-md w-fit hover:bg-gray-100">
+              Learn more
+            </button>
           </div>
         </div>
+        {/* </div> */}
 
         {/* Right Sidebar */}
-        <aside className="col-span-2 hidden md:flex flex-col space-y-4">
-          <div className="p-6 bg-[#E3F0FF] rounded-lg shadow-sm">
+        <aside className="col-span-3 hidden md:flex flex-col space-y-4">
+          <div className="p-4 bg-[#E3F0FF] rounded-lg shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full">
                 <i className="text-blue-500 fas fa-user"></i>

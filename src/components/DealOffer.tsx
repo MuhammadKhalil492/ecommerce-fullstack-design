@@ -93,7 +93,7 @@ const DealOffer: React.FC = () => {
               <h2 className="mt-4 text-lg font-medium text-gray-800">
                 {product.name}
               </h2>
-              <div className="inline-block px-5 py-1 my-2 text-sm font-semibold text-red-600 bg-red-100 rounded-full">
+              <div className="inline-block px-4 py-1 my-2 text-sm font-semibold text-red-600 bg-red-100 rounded-full">
                 {product.discount} %
               </div>
             </div>
