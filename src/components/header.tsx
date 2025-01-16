@@ -31,9 +31,9 @@ const Header = () => {
     },
   ];
   return (
-    <div className="container md:px-16 mx-auto" >
+    <div className="container px-16 mx-auto" >
       <nav className="bg-white dark:bg-gray-900 md:border-b">
-        <div className="flex flex-wrap items-center justify-between p-4 mx-auto">
+        <div className="container flex flex-wrap items-center justify-between p-4 mx-auto">
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
@@ -46,7 +46,7 @@ const Header = () => {
           </button>
           <a
             href="#"
-            className="flex items-center space-x-2 rtl:space-x-reverse sm:w-60 md:w-auto"
+            className="flex items-center space-x-2 rtl:space-x-reverse w-60 md:w-auto"
           >
             <Image src={"/logos.png"} width={50} height={50} alt="Logog" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -220,7 +220,7 @@ const Header = () => {
         </div>
       </nav>
       {/* Categories */}
-      <div className="hidden mx-auto sm:px-5 md:block">
+      <div className="hidden mx-auto max-w-7xl sm:px-5 md:block">
         <div className="flex items-center justify-between h-12">
           <div className="flex items-center space-x-8">
             <button className="flex items-center mr-2 text-gray-700 hover:text-gray-900">
@@ -260,7 +260,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="block sm:mx-0 md:mx-4 md:hidden">
+      <div className="block mx-4 md:hidden">
         <div
           dir="ltr"
           data-orientation="horizontal"
