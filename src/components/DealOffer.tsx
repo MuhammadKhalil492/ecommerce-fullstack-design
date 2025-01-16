@@ -106,7 +106,7 @@ const DealOffer: React.FC = () => {
               className="py-2 text-center border-l md:px-10 md:w-full"
             >
               <img
-                src="/watch.png"
+                src={product.image}
                 alt="Smart watch"
                 className="object-fill mx-auto"
               />

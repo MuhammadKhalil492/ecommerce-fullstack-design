@@ -20,12 +20,8 @@ const OurService: React.FC<OurServiceProps> = ({
     <div className="overflow-hidden border border-gray-300 rounded-lg shadow-lg">
       <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent/60">
         <img src={image} alt={imgAlt} className="object-fill h-full" />
-<<<<<<< HEAD
         <div className="absolute bg-blue-100 border-2 border-white rounded-full p-5 -bottom-6 right-4">
           {/* <i className="text-xl text-blue-600 fas fa-search"></i> */}
-=======
-        <div className="absolute bg-blue-100 border-2 border-white rounded-full p-7 -bottom-6 right-4">
->>>>>>> 4f66aa5fd692c911e72c5453e1f62606a0fcb28d
           <FontAwesomeIcon icon={iconName} className="text-xl text-black" />
         </div>
       </div>

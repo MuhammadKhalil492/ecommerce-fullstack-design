@@ -260,7 +260,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="block mx-4 md:hidden">
+      <div className="block sm:mx-0 md:mx-4 md:hidden">
         <div
           dir="ltr"
           data-orientation="horizontal"
