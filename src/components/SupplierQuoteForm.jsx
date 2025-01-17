@@ -5,7 +5,7 @@ export default function SupplierQuoteForm() {
     <div className="relative px-8 py-10 mt-6">
       {/* <!-- Background image with gradient overlay --> */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 rounded-lg opacity-90 bg-gradient-to-r from-[#2C7CF1]/100 to-[#00D1FF]/50"></div>
+        <div className="absolute inset-0 md:rounded-lg opacity-90 bg-gradient-to-r from-[#2C7CF1]/100 to-[#00D1FF]/50"></div>
         <img
           src="/image102.png"
           alt="background"
@@ -17,18 +17,24 @@ export default function SupplierQuoteForm() {
       <div className="container relative z-10 flex flex-wrap justify-between">
         {/* <!-- Left Column --> */}
         <div className="w-full text-white lg:w-2/5">
-          <p className="mb-4 text-4xl font-semibold leading-tight md:text-4xl">
+          <p className="mb-4 text-2xl font-semibold leading-tight md:text-4xl">
             An easy way to send requests to all suppliers
           </p>
-          <p className="text-lg opacity-90">
+          <p className="text-lg opacity-90 hidden md:block">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt.
           </p>
         </div>
+        <button
+          type="submit"
+          className="px-3 py-2 font-normal text-white transition duration-300 bg-blue-600 rounded hover:bg-blue-700 block md:hidden"
+        >
+          Send inquiry
+        </button>
 
         {/* <!-- Right Column - Form --> */}
 
-        <div className="w-full lg:w-5/12">
+        <div className="w-full lg:w-5/12 hidden md:block">
           <div className="p-8 bg-white rounded-lg shadow-lg">
             <h2 className="mb-6 text-2xl font-semibold text-gray-800">
               Send quote to suppliers

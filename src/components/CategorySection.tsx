@@ -32,7 +32,7 @@ const CategorySection: React.FC<CateforySectionProps> = ({
           </div>
           <div className="relative z-10 border-b p-4 text-sm font-sm md:hidden">
             {/* <!-- Heading --> */}
-            <h2 className="mb-6 text-2xl font-semibold text-gray-900">
+            <h2 className="text-2xl font-semibold text-gray-900">
               {heading}
             </h2>
           </div>
@@ -48,12 +48,12 @@ const CategorySection: React.FC<CateforySectionProps> = ({
         </div>
 
         {/* <!-- Right Section --> */}
-        <div className="grid grid-cols-2 col-span-3 gap-0.5 pt-1 md:grid-cols-4">
+         {/* <div className="grid grid-cols-2 col-span-3 gap-0.5 pt-1 md:grid-cols-4">  */}
           {children}
-        </div>
+         {/* </div>  */}
         <a
           href={btnLink}
-          className="inline-y md:hidden  px-6 py-3 text-base font-bold text-blue-800 transition-colors bg-white rounded-lg hover:bg-gray-50"
+          className="inline-flex items-center md:hidden px-6 py-3 text-base font-bold text-blue-800 transition-colors bg-white rounded-lg hover:bg-gray-50"
         >
           Source now
           <svg

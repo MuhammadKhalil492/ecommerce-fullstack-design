@@ -56,19 +56,19 @@ const DealOffer: React.FC = () => {
 
           {/* Timer */}
           <div className="flex md:mt-4 gap-x-2">
-            <div className="flex flex-col items-center justify-center px-3 text-white bg-gray-500 rounded md:block hidden ">
+            <div className="md:flex flex-col items-center justify-center p-2 text-white bg-gray-500 rounded hidden ">
               <span className="font-bold">04</span>
               <span className="text-xs">Days</span>
             </div>
-            <div className="flex flex-col items-center justify-center px-3 text-white bg-gray-500 rounded">
+            <div className="flex flex-col items-center justify-center p-2 text-white bg-gray-500 rounded">
               <span className="font-bold">13</span>
               <span className="text-xs">Hour</span>
             </div>
-            <div className="flex flex-col items-center justify-center px-3 text-white bg-gray-500 rounded">
+            <div className="flex flex-col items-center justify-center p-2 text-white bg-gray-500 rounded">
               <span className="font-bold">34</span>
               <span className="text-xs">Min</span>
             </div>
-            <div className="flex flex-col items-center justify-center px-3 text-white bg-gray-500 rounded">
+            <div className="flex flex-col items-center justify-center p-2 text-white bg-gray-500 rounded">
               <span className="font-bold">56</span>
               <span className="text-xs">Sec</span>
             </div>
