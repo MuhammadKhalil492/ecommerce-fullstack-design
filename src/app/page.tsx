@@ -4,6 +4,7 @@ import DealOffer from "@/components/DealOffer";
 import MainCategory from "@/components/MainCategory";
 import OurService from "@/components/Services/OurService";
 import SupplierQuoteForm from "@/components/SupplierQuoteForm";
+import SuppliersRegion from "@/components/SuppliersRegion";
 import ProductCard from "@/components/Products/ProductCard";
 import ProductItem from "@/components/Products/ProductItem";
 import Carousel from "react-multi-carousel";
@@ -82,7 +83,7 @@ export default function Home() {
             itemClass="carousel-item-padding-40-px"
           >
             {products.map((product, index) => (
-              <div key={index} className="px-2">
+              <div key={index}>
                 <ProductItem {...product} />
               </div>
             ))}
@@ -118,7 +119,7 @@ export default function Home() {
             itemClass="carousel-item-padding-40-px"
           >
             {gadgets.map((gadget, index) => (
-              <div key={index} className="px-2">
+              <div key={index}>
                 <ProductItem {...gadget} />
               </div>
             ))}
@@ -129,7 +130,7 @@ export default function Home() {
       </CategorySection>
       <SupplierQuoteForm />
       {/* Recomedned section */}
-      <div className="px-4 md:px-0 py-8">
+      <div className="px-4 md:px-0 mt-6">
         <h1 className="mb-6 text-2xl font-bold">Recommended items</h1>
 
         {/* <!-- Grid Container --> */}
@@ -157,7 +158,7 @@ export default function Home() {
         </div>
       </div>
       {/* Service sections */}
-      <div className="p-4 md:p-0">
+      <div className="px-4 md:px-0 mt-6">
         <h2 className="relative inline-block mb-8 text-3xl font-bold">
           Our extra services
           {/* <span className="absolute bottom-0 left-0 w-full h-1 transform -translate-y-2 bg-blue-500"></span> */}
@@ -165,7 +166,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {/* <!-- Source from Industry Hubs --> */}
-          <OurService url="#" iconName={faSearch} image="/image108.png" imgAlt="Warehouse with boxes" heading="Source from Industry Hubs" />
+          <OurService url="#" iconName={faPalette} image="/image108.png" imgAlt="Warehouse with boxes" heading="Source from Industry Hubs" />
           {/* <!-- Customize Your Products --> */}
           <OurService url="#" iconName={faSearch} image="/image104.png" imgAlt="Color palette" heading="Customize Your Products" />
 
@@ -177,6 +178,7 @@ export default function Home() {
 
         </div>
       </div>
+      <SuppliersRegion/>
     </section>
   );
 }

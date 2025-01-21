@@ -46,7 +46,7 @@ const DealOffer: React.FC = () => {
     <div className="bg-white shadow-sm md:rounded-lg md:border bg-card text-card-foreground">
       <div className="flex flex-col gap-6 md:flex-row">
         {/* Left section with title and timer */}
-        <div className="flex justify-between px-4 py-6 border-b md:border-none md:justify-start md:flex-col md:w-64">
+        <div className="flex justify-between p-4 border-b md:border-none md:justify-start md:flex-col md:w-64">
           <div className="">
             <h2 className="text-xl font-semibold">Deals and offers</h2>
             <p className="text-base text-[#8B96A5] text-muted-foreground">

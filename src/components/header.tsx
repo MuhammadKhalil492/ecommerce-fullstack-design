@@ -1,4 +1,6 @@
 "use client";
+import Flag from "react-world-flags"; // Import the react-world-flags package
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
@@ -11,11 +13,13 @@ import {
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+
 const Header = () => {
+  const [countryCode, setCountryCode] = useState("DE"); // Germany country code
   const tabs = [
     {
       label: "All Category",
-      content: "conten 1",
+      content: "content 1",
     },
     {
       label: "Gadgets",
@@ -27,9 +31,10 @@ const Header = () => {
     },
     {
       label: "Accessories",
-      content: "Cloths",
+      content: "Accessories",
     },
-  ];
+  ]
+
   return (
     <div className="container px-4 md:px-16 mx-auto" >
       <nav className="bg-white dark:bg-gray-900 md:border-b">
@@ -240,21 +245,45 @@ const Header = () => {
               Menu item
             </a>
             <div className="relative group">
-              <button className="flex items-center text-gray-700 hover:text-gray-900">
-                Help
+              <button className="flex items-center space-x-1 text-sm font-medium">
+                <span>Help</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
               </button>
             </div>
           </div>
 
           <div className="flex items-center space-x-6">
             <div className="relative group">
-              <button className="flex items-center text-gray-700 hover:text-gray-900">
-                English, USD
+              <button className="flex items-center space-x-1 text-sm font-medium">
+                <span>English, USD</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
               </button>
             </div>
             <div className="relative group">
-              <button className="flex items-center text-gray-700 hover:text-gray-900">
-                Ship to
+              <button className="flex items-center space-x-2 text-sm font-medium">
+                <span>Ship to</span>
+                <Flag
+                  code={countryCode} // Use Germany's country code "DE"
+                  className="w-5 h-4 object-cover rounded-sm"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -281,7 +310,7 @@ const Header = () => {
                 aria-controls="radix-:R1l97nenb:-content-tab1"
                 data-state="inactive"
                 id="radix-:R1l97nenb:-trigger-tab1"
-                className="inline-flex bg-gray-100 font-md rounded-lg text-blue-500 items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm"
+                className="inline-flex bg-gray-100 font-md rounded-lg text-blue-500 items-center justify-center whitespace-nowrap px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm"
                 data-orientation="horizontal"
                 data-radix-collection-item=""
               >
