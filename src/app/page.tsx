@@ -45,7 +45,7 @@ export default function Home() {
     { title: "Smart watches", price: "USD 19", srcImg: './watch.png', url: "#" },
     { title: "Cameras", price: "USD 89", srcImg: './camera.png', url: "#" },
     { title: "Headphones", price: "USD 10", srcImg: './9.png', url: "#" },
-    { title: "Smart watches", price: "USD 90", srcImg: './4.png', url: "#" },
+    { title: "Smart watches", price: "USD 90", srcImg: './Kettle.png', url: "#" },
     { title: "Gaming set", price: "USD 35", srcImg: './headphone.png', url: "#" },
     { title: "Laptops & PC", price: "USD 340", srcImg: './laptop.png', url: "#" },
     { title: "Smartphones", price: "USD 19", srcImg: './mobile.png', url: "#" },
@@ -78,7 +78,7 @@ export default function Home() {
             customTransition="all .5s"
             transitionDuration={500}
             containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet"]}
+            removeArrowOnDeviceType={["tablet","mobile"]}
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
           >
@@ -99,7 +99,7 @@ export default function Home() {
           <ProductItem title="Smart watches" price="USD 19" srcImg={'./watch.png'} url="#" />
           <ProductItem title="Cameras" price="USD 89" srcImg={'./camera.png'} url="#" />
           <ProductItem title="Headphones" price="USD 10" srcImg={'./9.png'} url="#" />
-          <ProductItem title="Smart watches" price="USD 90" srcImg={'./4.png'} url="#" />
+          <ProductItem title="Smart watches" price="USD 90" srcImg={'./Kettle.png'} url="#" />
           <ProductItem title="Gaming set" price="USD 35" srcImg={'./headphone.png'} url="#" />
           <ProductItem title="Laptops & PC" price="USD 340" srcImg={'./laptop.png'} url="#" />
           <ProductItem title="Samrtphones" price="USD 19" srcImg={'./mobile.png'} url="#" />
@@ -114,7 +114,7 @@ export default function Home() {
             customTransition="all .5s"
             transitionDuration={500}
             containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet"]}
+            removeArrowOnDeviceType={["tablet","mobile"]}
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
           >

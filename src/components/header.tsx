@@ -36,7 +36,7 @@ const Header = () => {
   ]
 
   return (
-    <div className="container px-4 md:px-16 mx-auto" >
+    <div className="px-4 md:px-20 mx-auto" >
       <nav className="bg-white dark:bg-gray-900 md:border-b">
         <div className="container flex flex-wrap items-center justify-between py-4 mx-auto">
           <button

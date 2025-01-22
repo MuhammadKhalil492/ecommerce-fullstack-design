@@ -16,7 +16,7 @@ const CategorySection: React.FC<CateforySectionProps> = ({
     <div className="mx-auto mt-4 bg-white border border-gray-300 rounded-lg">
       <div className="grid grid-cols-1 gap-0 lg:grid-cols-4">
         {/* <!-- Left Section --> */}
-        <div className="relative bg-white rounded-l-lg ">
+        <div className="relative bg-white rounded-l-lg-none md:rounded-l-lg ">
           {/* <!-- Content Container --> */}
           <div className="relative z-10 w-48 p-6 text-sm font-sm hidden md:block">
             {/* <!-- Heading --> */}
@@ -53,7 +53,7 @@ const CategorySection: React.FC<CateforySectionProps> = ({
          {/* </div>  */}
         <a
           href={btnLink}
-          className="inline-flex items-center md:hidden px-6 py-3 text-base font-bold text-blue-800 transition-colors bg-white rounded-lg hover:bg-gray-50"
+          className="inline-flex items-center md:hidden px-6 py-3 text-base font-bold text-blue-800 transition-colors bg-white rounded-none md:rounded-lg hover:bg-gray-50"
         >
           Source now
           <svg
