@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import FontAwesomeConfig from "../assets/fontawesome";
+import SubscribeMail from '@/components/SubscribeMail';
 import "@/components/header";
 import Header from "@/components/header";
+import Footer from "@/components/Footer";
+// import { Footer } from "flowbite-react";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,6 +41,10 @@ export default function RootLayout({
         <main className="lg:px-20 bg-gray-50">
           {children}
         </main>
+        <footer>
+        <SubscribeMail />
+        <Footer/>
+        </footer>
       </body>
     </html>
   );

@@ -52,7 +52,7 @@ export default function Home() {
     { title: "Electric kattle", price: "USD 240", srcImg: './mobile.png', url: "#" }
   ]
   return (
-    <section className="">
+    <section className="py-6">
       <MainCategory />
       <DealOffer />
       <CategorySection

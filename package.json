@@ -20,7 +20,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-multi-carousel": "^2.8.5",
+    "react-rating-stars-component": "^2.2.0",
     "react-slick": "^0.30.3",
+    "react-stars": "^2.2.5",
     "react-tabs-scrollable": "^2.0.7",
     "react-world-flags": "^1.6.0",
     "slick-carousel": "^1.8.1"
