@@ -4,7 +4,7 @@ import Sidebar from "@/components/Sidebar";
 import Topbar from "@/components/Topbar";
 import ProductCard from "@/components/ProductCard";
 import BreadcrumbsSection from '../../components/BreadcrumbsSection';
-import SubscribeMail from '../../components/SubscribeMail';
+
 
 export default function Page() {
   return (

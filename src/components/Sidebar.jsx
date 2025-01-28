@@ -3,7 +3,7 @@ import React from 'react'
 export default function Sidebar() {
   return (
     <div>
-      <aside className="w-64 pt-4 pr-4">
+      <aside className="w-64 pt-4 pr-4 hidden md:block">
         <div className="mb-6">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-sm font-semibold text-gray-900">Category</h3>
