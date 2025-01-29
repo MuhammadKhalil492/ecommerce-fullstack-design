@@ -40,7 +40,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
         <div className="flex-1">
           <div className="flex justify-between items-center">
-            <h2 className="font-medium text-gray-900">{title}</h2>
+            <h2 className="text-sm md:text-md font-medium text-gray-900">{title}</h2>
             <button className="text-blue-600 hover:text-red-500 border rounded-md p-1.5 hidden md:block">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
@@ -53,27 +53,32 @@ const ProductCard: React.FC<ProductCardProps> = ({
             <span className="text-sm text-gray-500 line-through">{originalPrice}</span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-8">
-            {/* <div className="flex flex-col md:flex-row md:gap-4 items-center"> */}
-              <div className="">
-                <ReactStars
-                  count={5}
-                  value={rating}
-                  onChange={ratingChanged}
-                  size={20}
-                  activeColor="#ffd700"
-                  isHalf={true}
-                />
-              </div>
-              <div className=''>
-              <span className="text-md text-gray-500">• {orders} orders </span>
-
-              </div>
-              <div className=''>
-
-              <span className="text-sm text-green-600">{freeShipping ? '• Free Shipping' : ''}</span>
-              </div>
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-8 items-center gap-2">
+            {/* ReactStars Component for Rating */}
+            <div className="flex items-center">
+              <ReactStars
+                count={5}
+                value={rating}
+                onChange={ratingChanged}
+                size={20}
+                activeColor="#ffd700"
+                isHalf={true}
+              />
             </div>
+
+            {/* Orders Info */}
+            <div className="flex items-center">
+              <span className="text-sm text-gray-500">• {orders} orders</span>
+            </div>
+
+            {/* Free Shipping Info */}
+            <div className="flex items-center">
+              {freeShipping && (
+                <span className="text-xs md:text-sm text-green-600">• Free Shipping</span>
+              )}
+            </div>
+          </div>
+
           {/* </div> */}
 
           <p className="mt-2 text-sm text-gray-600 hidden md:block">

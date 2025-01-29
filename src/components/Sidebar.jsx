@@ -3,7 +3,7 @@ import React from 'react'
 export default function Sidebar() {
   return (
     <div>
-      <aside className="w-64 pt-4 pr-4 hidden md:block">
+      <aside className="w-64 pt-4 pr-4 hidden lg:block">
         <div className="mb-6">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-sm font-semibold text-gray-900">Category</h3>
@@ -122,7 +122,7 @@ export default function Sidebar() {
           </div>
           <div className="space-y-2">
             <label className="flex items-center text-sm text-gray-600">
-              <input type="radio" name="condition" className="w-4 h-4 border-gray-300 text-blue-600" checked />
+              <input type="radio" name="condition" className="w-4 h-4 border-gray-300 text-blue-600" />
               <span className="ml-2">Any</span>
             </label>
             <label className="flex items-center text-sm text-gray-600">

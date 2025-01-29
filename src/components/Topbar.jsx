@@ -50,7 +50,7 @@ export default function Topbar() {
           {/* Controls */}
           <div className="flex items-center gap-6">
             {/* Verified Only Checkbox */}
-            <label className="hidden md:flex items-center gap-2 text-sm text-gray-600">
+            <label className="hidden lg:flex items-center gap-2 text-sm text-gray-600">
               <input
                 type="checkbox"
                 className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
@@ -59,7 +59,7 @@ export default function Topbar() {
             </label>
 
             {/* Sort Dropdown */}
-            <div className="relative hidden md:block">
+            <div className="relative hidden lg:block">
               <select
                 className="appearance-none bg-transparent pr-8 pl-2 py-1 text-sm text-gray-600 border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
@@ -72,12 +72,12 @@ export default function Topbar() {
 
             {/* Mobile Controls */}
             <div className="flex gap-4">
-              <div className="border border-gray-200 px-2 py-1 rounded-md flex items-center cursor-pointer md:hidden">
+              <div className="border border-gray-200 px-2 py-1 rounded-md flex items-center cursor-pointer lg:hidden">
                 <span className="text-sm font-bold px-3">Sort: Newest</span>
                 <FontAwesomeIcon icon={faBars} />
               </div>
               <div
-                className="border border-gray-200 px-2 py-1 rounded-md flex items-center cursor-pointer md:hidden"
+                className="border border-gray-200 px-2 py-1 rounded-md flex items-center cursor-pointer lg:hidden"
                 onClick={toggleModal}
               >
                 <span className="text-sm font-bold px-3">Filter</span>
