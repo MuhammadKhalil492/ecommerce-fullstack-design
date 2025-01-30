@@ -7,11 +7,10 @@ function MainCategory() {
 
   return (
     <div className="container mx-auto md:border border-gray-300 bg-white rounded-lg mb-4 md:p-6 sm:p-0">
-      <div className="grid grid-cols-12 gap-4">
-
+      <div className="grid grid-cols-12 gap-3">
         {/* Left Sidebar */}
         <div className="col-span-3 hidden md:block">
-          <ul className="space-y-3 text-base font-medium text-gray-500 bg-white dark:text-gray-400">
+          <ul className="space-y-2 text-base font-medium text-gray-500 bg-white dark:text-gray-400">
             <LinkTab
               label="Automobiles"
               link="#"
@@ -64,11 +63,11 @@ function MainCategory() {
         </div>
 
         {/* Center Section */}
-        <div className="col-span-12 md:col-span-7 bg-purple-400 rounded-lg">
-          <div className="relative overflow-hidden">
+        <div className="col-span-12 md:col-span-6">
+          <div className="relative overflow-hidden h-full">
             <img
               src="/banner.png"
-              className="w-full h-full object-cover"
+              className="object-cover h-full rounded-lg"
               alt="Electronic Items Banner"
             />
             <div className="absolute top-10 md:top-20 px-8 flex flex-col justify-center bg-gradient-to-r from-emerald-100/1 to-emerald-100/1">
@@ -84,8 +83,8 @@ function MainCategory() {
         </div>
 
         {/* Right Sidebar */}
-        <aside className="col-span-2 hidden md:flex flex-col space-y-4">
-          <div className="p-6 bg-[#E3F0FF] rounded-lg shadow-sm">
+        <aside className="col-span-3 hidden md:flex flex-col space-y-4">
+          <div className="p-5 bg-[#E3F0FF] rounded-lg shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full">
                 <i className="text-blue-500 fas fa-user"></i>

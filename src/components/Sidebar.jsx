@@ -1,4 +1,7 @@
-import React from 'react'
+'use client';
+import React from 'react';
+import RangeSlider from 'react-range-slider-input';
+import 'react-range-slider-input/dist/style.css';
 
 export default function Sidebar() {
   return (
@@ -96,11 +99,11 @@ export default function Sidebar() {
         </div>
 
         <div className="mb-6">
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center justify-between my-2">
             <h3 className="text-sm font-semibold text-gray-900">Price range</h3>
           </div>
-          <div className="px-2">
-            <input type="range" className="w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer" min="0" max="100" />
+          <div className=" my-5">
+            <RangeSlider min={0} max={100} defaultValue={0} className='w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer' />
             <div className="flex justify-between mt-2">
               <span className="text-sm text-gray-600">Min</span>
               <span className="text-sm text-gray-600">Max</span>

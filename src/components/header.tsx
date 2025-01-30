@@ -36,9 +36,9 @@ const Header = () => {
   ]
 
   return (
-    <div className="px-4 md:px-20 mx-auto" >
-      <nav className="bg-white dark:bg-gray-900 md:border-b">
-        <div className="container flex flex-wrap items-center justify-between py-4 mx-auto">
+    <div className="px-4 lg:px-20 mx-auto">
+      <nav className="bg-white dark:bg-gray-900">
+        <div className="container flex flex-wrap items-center  justify-between py-4 mx-auto">
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
@@ -51,14 +51,14 @@ const Header = () => {
           </button>
           <a
             href="#"
-            className="flex items-center space-x-2 rtl:space-x-reverse sm:w-60 md:w-auto"
+            className="flex lg:items-center lg:space-x-2 rtl:space-x-reverse lg:w-32"
           >
             <Image src={"/logos.png"} width={50} height={50} alt="Logog" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Brand
             </span>
           </a>
-          <div className="flex justify-between space-x-4 md:hidden justify-self-end">
+          <div className="flex justify-between space-x-4 lg:hidden justify-self-end">
             <a href="#">
               <FontAwesomeIcon icon={faShoppingCart} size="lg" />
             </a>
@@ -66,20 +66,20 @@ const Header = () => {
               <FontAwesomeIcon icon={faUser} size="lg" />
             </a>
           </div>
-          <div className="hidden md:flex">
-            <div className="flex-1 max-w-2xl mx-8 rounded-lg">
+          <div className="hidden lg:flex bg-purple-400 ">
+            <div className="rounded-lg">
               <div className="relative flex items-center border border-gray-300 rounded-lg focus-within:border-none focus-within:ring-blue-500 focus-within:ring-2">
                 <input
                   type="text"
                   placeholder="Search"
-                  className="px-4 border-none rounded-l-lg outline-none w-96 focus:ring-0"
+                  className="px-4 border-none rounded-l-lg outline-none lg:w-20 xl:w-96 focus:ring-0"
                 />
                 <div className="relative">
                   <div className="relative inline-block text-left">
                     <div className="border-l">
                       <button
                         type="button"
-                        className="inline-flex w-36 justify-center  gap-x-1.5 px-3 py-3 text-sm  text-gray-900 shadow-sm  hover:bg-gray-50"
+                        className="inline-flex lg:w-24 xl:w-36 justify-center  gap-x-1.5 px-3 py-3 text-sm  text-gray-900 shadow-sm  hover:bg-gray-50"
                         id="menu-button"
                         aria-expanded="true"
                         aria-haspopup="true"
@@ -93,86 +93,15 @@ const Header = () => {
                         </span>
                       </button>
                     </div>
-                    {/* <div
-                      className="absolute right-0 z-10 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-black/5 focus:outline-none"
-                      role="menu"
-                      aria-orientation="vertical"
-                      aria-labelledby="menu-button"
-                    >
-                      <div className="py-1" role="none">
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700"
-                          role="menuitem"
-                          id="menu-item-0"
-                        >
-                          Edit
-                        </a>
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700"
-                          role="menuitem"
-                          id="menu-item-1"
-                        >
-                          Duplicate
-                        </a>
-                      </div>
-                      <div className="py-1" role="none">
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700"
-                          role="menuitem"
-                          id="menu-item-2"
-                        >
-                          Archive
-                        </a>
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700"
-                          role="menuitem"
-                          id="menu-item-3"
-                        >
-                          Move
-                        </a>
-                      </div>
-                      <div className="py-1" role="none">
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700"
-                          role="menuitem"
-                          id="menu-item-4"
-                        >
-                          Share
-                        </a>
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700"
-                          role="menuitem"
-                          id="menu-item-5"
-                        >
-                          Add to favorites
-                        </a>
-                      </div>
-                      <div className="py-1" role="none">
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700"
-                          role="menuitem"
-                          id="menu-item-6"
-                        >
-                          Delete
-                        </a>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
-                <button className="px-6 py-2.5 w-44 bg-blue-500 text-white rounded-r-lg hover:bg-blue-600 focus:outline-none">
+                <button className="px-6 py-2.5 lg:w-10 xl:w-44 bg-blue-500 text-white rounded-r-lg hover:bg-blue-600 focus:outline-none">
                   Search
                 </button>
               </div>
             </div>
           </div>
-          <div className="md:hidden rounded-lg border border-gray-300 w-full mt-2.5">
+          <div className="lg:hidden rounded-lg border border-gray-300 w-full mt-2.5">
             <div className="relative w-full">
               <div className="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
                 <FontAwesomeIcon icon={faSearch} className="text-gray-500" />
@@ -188,7 +117,7 @@ const Header = () => {
           </div>
 
           <div
-            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className="items-center  xl:justify-between hidden  w-full lg:flex lg:w-auto lg:order-1"
             id="navbar-search"
           >
             <div className="flex items-center space-x-6">
@@ -225,7 +154,7 @@ const Header = () => {
         </div>
       </nav>
       {/* Categories */}
-      <div className="hidden mx-auto md:block">
+      <div className="hidden mx-auto container lg:block">
         <div className="flex items-center justify-between h-12">
           <div className="flex items-center space-x-8">
             <button className="flex items-center mr-2 text-gray-700 hover:text-gray-900">
@@ -289,7 +218,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="block md:mx-4 md:hidden">
+      <div className="block lg:mx-4 lg:hidden">
         <div
           dir="ltr"
           data-orientation="horizontal"

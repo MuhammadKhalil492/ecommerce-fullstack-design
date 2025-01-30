@@ -48,9 +48,8 @@ const CategorySection: React.FC<CateforySectionProps> = ({
         </div>
 
         {/* <!-- Right Section --> */}
-         {/* <div className="grid grid-cols-2 col-span-3 gap-0.5 pt-1 md:grid-cols-4">  */}
-          {children}
-         {/* </div>  */}
+
+        {children}
         <a
           href={btnLink}
           className="inline-flex items-center md:hidden px-6 py-3 text-base font-bold text-blue-800 transition-colors bg-white rounded-none md:rounded-lg hover:bg-gray-50"

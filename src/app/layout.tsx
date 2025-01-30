@@ -6,7 +6,6 @@ import SubscribeMail from '@/components/SubscribeMail';
 import "@/components/header";
 import Header from "@/components/header";
 import Footer from "@/components/Footer";
-// import { Footer } from "flowbite-react";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="md:border-b ">
+        <header className="md:border-b">
           <Header />
         </header>
         <main className="lg:px-20 bg-gray-50">
